@@ -13,5 +13,7 @@ Sürüm: 1.1 , BETA
 # Güncellemeler 
 
 27.09.2021 : v1.0 Yayınlandı.
-29.09.2021 : v1.1 Yayınlandı 
+
+29.09.2021 : v1.1 Yayınlandı.
+
 Değişiklikler : help Komutu Eklendi.
