@@ -1,4 +1,3 @@
-
 import os
 import time
 
@@ -6,15 +5,22 @@ os.system("clear")
 os.system("figlet Filesploit")
 print(" ")
 print("[UYARI] Lütfen Önce install.py Dosyasını Çalıştırın.")
-print("Coded By Xale - GitHub: @xaletr - v1.0 Beta")
+print("Coded By Xale - GitHub: @xaletr - v1.1 Beta")
 print(" ")
 cmd = input("filesploit>> ")
 
-if cmd == "read file":
+if cmd == "help":
+ print("read file : Dosya Okur.")
+ print("new file : Dosya Oluşturur.")
+ print("write file : Belirtilen Dosyaya Belirtilen Mesajı Yazar.")
+ time.sleep(7)
+ os.system("python3 filesploit.py")
+
+elif cmd == "read file":
  readfile = input("Okunacak Dosya Adı: ")
  dosya = open(readfile,"r",encoding="utf-8")
  oku = dosya.read()
- print(oku)
+ print(oku)   
  time.sleep(1)
  os.system("python3 filesploit.py")
 elif cmd == "new file":
@@ -28,6 +34,7 @@ elif cmd == "write file":
  text1 = input("Dosyanın 1. Satırına Ne Yazmak İstersiniz: ")
  dosya3.write(text1)
  time.sleep(1)
+ os.system("python3 filesploit.py")
  os.system("python3 filesploit.py")
 elif cmd == "exit":
  os.system("exit")
